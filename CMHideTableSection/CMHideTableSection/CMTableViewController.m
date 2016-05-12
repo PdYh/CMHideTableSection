@@ -68,6 +68,7 @@ static NSString * const headerID = @"headerID";
 {
     CMTableViewHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerID];
     header.textLabel.text = _titleArray[section];
+//    header.textLabel.textColor = [UIColor redColor]; // 这里设置字体颜色, 真机有效
     header.hideSection = section;
     return header;
 }

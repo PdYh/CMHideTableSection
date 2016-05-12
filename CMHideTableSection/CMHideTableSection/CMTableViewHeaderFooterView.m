@@ -33,15 +33,21 @@
     tapButton.backgroundColor = [UIColor whiteColor];
     [self.contentView addSubview:tapButton];
     self.tapButton = tapButton;
-}
-- (void)layoutSubviews
-{
+    
     [self.tapButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.contentView);
     }];
-    [super layoutSubviews];
 
 }
+//- (void)layoutSubviews
+//{
+//    [self.tapButton mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.equalTo(self.contentView);
+//    }];
+//
+//    [super layoutSubviews];
+//
+//}
 
 #pragma mark - methods event
 - (void)tapSection: (UIButton *)button
